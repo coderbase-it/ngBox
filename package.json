@@ -39,7 +39,7 @@
     "@angular/cli": "~8.3.3",
     "@angular/compiler-cli": "~8.2.4",
     "@angular/language-service": "~8.2.4",
-    "@bazel/bazel": "^0.28.1",
+    "@bazel/bazel": "^2.0.0",
     "@bazel/ibazel": "^0.10.2",
     "@bazel/karma": "0.34.0",
     "@bazel/protractor": "0.34.0",

@@ -78,6 +78,18 @@
       ],
       "kawai-engine/*": [
         "dist/kawai-engine/*"
+      ],
+      "ngxs-pizza": [
+        "dist/ngxs-pizza"
+      ],
+      "ngxs-pizza/*": [
+        "dist/ngxs-pizza/*"
+      ],
+      "ngrx-pizza": [
+        "dist/ngrx-pizza"
+      ],
+      "ngrx-pizza/*": [
+        "dist/ngrx-pizza/*"
       ]
     }
   },
