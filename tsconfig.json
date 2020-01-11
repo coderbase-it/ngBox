@@ -17,10 +17,73 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "poker-engine": [
+        "dist/poker-engine"
+      ],
+      "poker-engine/*": [
+        "dist/poker-engine/*"
+      ],
+      "movie-engine": [
+        "dist/movie-engine"
+      ],
+      "movie-engine/*": [
+        "dist/movie-engine/*"
+      ],
+      "crm-engine": [
+        "dist/crm-engine"
+      ],
+      "crm-engine/*": [
+        "dist/crm-engine/*"
+      ],
+      "element-engine": [
+        "dist/element-engine"
+      ],
+      "element-engine/*": [
+        "dist/element-engine/*"
+      ],
+      "todo-ngxs-engine": [
+        "dist/todo-ngxs-engine"
+      ],
+      "todo-ngxs-engine/*": [
+        "dist/todo-ngxs-engine/*"
+      ],
+      "blackjack-engine": [
+        "dist/blackjack-engine"
+      ],
+      "blackjack-engine/*": [
+        "dist/blackjack-engine/*"
+      ],
+      "unicornland-engine": [
+        "dist/unicornland-engine"
+      ],
+      "unicornland-engine/*": [
+        "dist/unicornland-engine/*"
+      ],
+      "snakegame-engine": [
+        "dist/snakegame-engine"
+      ],
+      "snakegame-engine/*": [
+        "dist/snakegame-engine/*"
+      ],
+      "portfolio": [
+        "dist/portfolio"
+      ],
+      "portfolio/*": [
+        "dist/portfolio/*"
+      ],
+      "kawai-engine": [
+        "dist/kawai-engine"
+      ],
+      "kawai-engine/*": [
+        "dist/kawai-engine/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "enableIvy": true
   }
 }

@@ -1,27 +1,17 @@
-# NgBox
+# ngBox 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+Ajouter une nouvelle appli a la ngBox 
+Etape 1 ) Créer une nouvelle librairie ( ng g library truc-engine)
+Etape 2 ) Ajouter un module de routing dans cette librairie et ajouter l'import de ce dernier dans le
+module de votre librairie
+Etape 3 ) Créer une module de loader ( module qui ne va que importé le module de votre librairie)
+Etape 4 ) Faire le lazy loading du loader fraichement crée dans le app-routing-module.ts
+Etape 5 ) Rajouter un lien dans le menu de navigation 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## bug à gérer 
+chargement d'une librarie de plugin  multimodule  ( cas des deux blackjack )
 
-## Code scaffolding
+# a faire
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+la checkbox doit etre activé si dans la config du routeur il existe ce moduel 

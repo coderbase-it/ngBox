@@ -1,0 +1,102 @@
+<svg:g id="kawaii-face" transform="translate(34 57)" xmlns:svg="">
+  <svg:defs>
+    <svg:path [attr.d]="pathsFace.defs" id="kawaii-face__path-1"/>
+  </svg:defs>
+  <svg:g id="kawaii-face__mouth" transform="translate(18.000000, 16.000000)">
+    <ng-container *ngIf="mood === moods.BLISSFUL || mood ===  moods.LOVESTRUCK  || mood === moods.EXCITED">
+      <svg:g
+        id="kawaii-face__mouth__joy"
+        transform="translate(0.000000, 1.000000)"
+      >
+        <svg:mask id="kawaii-face__mask-2-${{uniqueId}}" fill="white">
+          <svg:use [attr.xlink:href]="'#kawaii-face__path-1'"></svg:use>
+        </svg:mask>
+        <svg:use
+          id="Combined-Shape"
+          fill="#000000"
+          [attr.xlink:href]="'#kawaii-face__path-1'"></svg:use>
+        <svg:path
+          [attr.d]="pathsFace.tongue"
+          id="kawaii-face__tongue"
+          fill="#E74144"
+          mask={`url(#kawaii-face__mask-2-${uniqueId}`}
+          transform="translate(15.000000, 11.431885) scale(1, -1)
+    translate(-15.000000, -11.431885)"></svg:path>
+      </svg:g>
+    </ng-container>
+
+    <ng-container *ngIf="mood === moods.HAPPY">
+      <svg:path [attr.d]=pathsFace.happy id="kawaii-face__mouth__happy" fill="#000000"></svg:path>
+    </ng-container>
+    <ng-container *ngIf="mood  === moods.SHOCKED">
+      <svg:ellipse
+        id="kawaii-face__mouth__shocked"
+        cx="15"
+        cy="14"
+        rx="9"
+        ry="10"
+        fill="#000000"></svg:ellipse>
+    </ng-container>
+    <ng-container *ngIf=" mood  === moods.SAD || mood === moods.KO">
+      <svg:path
+        [attr.d]="pathsFace.sad"
+        id="kawaii-face__mouth__sad"
+        fill="#000000"
+        transform="translate(14.999999, 5.500000) scale(1, -1) translate(-14.999999, -5.500000)"></svg:path>
+    </ng-container>
+  </svg:g>
+  <svg:g
+    id="kawaii-face__blush"
+    transform="translate(0.000000, 15.000000)"
+    fill="#000000"
+    opacity="0.2"
+  >
+    <svg:circle id="Oval" cx="3" cy="3" r="3"></svg:circle>
+    <svg:circle id="Oval" cx="63" cy="3" r="3"></svg:circle>
+  </svg:g>
+  <svg:g
+    id="kawaii-face__eyes"
+    transform="translate(2.000000, 0.000000)"
+    fill="#000000"
+  >
+    <ng-container *ngIf="mood === moods.BLISSFUL">
+      <svg:g
+        id="kawaii-face__eyes__arc"
+        transform="translate(1.000000, 0.000000)"
+      >
+        <svg:path [attr.d]="pathsFace.bliss1" id="Fill-5"/>
+        <svg:path [attr.d]="pathsFace.bliss2" id="Fill-5"/>
+      </svg:g>
+    </ng-container>
+    <ng-container *ngIf="mood ===  moods.HAPPY || mood ===  moods.SAD || mood ===  moods.SHOCKED || mood ===  moods.EXCITED">
+      <svg:g
+        id="kawaii-face__eyes__circle"
+        transform="translate(1.000000, 2.000000)"
+      >
+        <circle id="Oval-3" cx="4.5" cy="4.5" r="4.5"></circle>
+        <circle id="Oval-3" cx="56.5" cy="4.5" r="4.5"></circle>
+      </svg:g>
+    </ng-container>
+    <ng-container *ngIf="mood ===  moods.LOVESTRUCK">
+      <svg:g
+        id="kawaii-face__eyes__heart"
+        transform="translate(0.000000, 2.000000)"
+        fillRule="nonzero"
+      >
+        <svg:path [attr.d]="pathsFace.lovestruck1" id="Shape"></svg:path>
+        <svg:path [attr.d]="pathsFace.lovestruck2" id="Shape"></svg:path>
+      </svg:g>
+    </ng-container>
+    <ng-container *ngIf="mood ===  moods.KO">
+      <svg:g
+        id="kawaii-face__eyes__ko"
+        transform="translate(1.500000, 1.000000)"
+        fillRule="nonzero"
+      >
+        <svg:path [attr.d]="pathsFace.ko1" id="Cross"></svg:path>
+        <svg:path [attr.d]="pathsFace.ko2" id="Cross"></svg:path>
+      </svg:g>
+    </ng-container>
+
+  </svg:g>
+</svg:g>
