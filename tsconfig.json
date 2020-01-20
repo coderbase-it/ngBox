@@ -1,0 +1,101 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "poker-engine": [
+        "dist/poker-engine"
+      ],
+      "poker-engine/*": [
+        "dist/poker-engine/*"
+      ],
+      "movie-engine": [
+        "dist/movie-engine"
+      ],
+      "movie-engine/*": [
+        "dist/movie-engine/*"
+      ],
+      "crm-engine": [
+        "dist/crm-engine"
+      ],
+      "crm-engine/*": [
+        "dist/crm-engine/*"
+      ],
+      "element-engine": [
+        "dist/element-engine"
+      ],
+      "element-engine/*": [
+        "dist/element-engine/*"
+      ],
+      "todo-ngxs-engine": [
+        "dist/todo-ngxs-engine"
+      ],
+      "todo-ngxs-engine/*": [
+        "dist/todo-ngxs-engine/*"
+      ],
+      "blackjack-engine": [
+        "dist/blackjack-engine"
+      ],
+      "blackjack-engine/*": [
+        "dist/blackjack-engine/*"
+      ],
+      "unicornland-engine": [
+        "dist/unicornland-engine"
+      ],
+      "unicornland-engine/*": [
+        "dist/unicornland-engine/*"
+      ],
+      "snakegame-engine": [
+        "dist/snakegame-engine"
+      ],
+      "snakegame-engine/*": [
+        "dist/snakegame-engine/*"
+      ],
+      "portfolio": [
+        "dist/portfolio"
+      ],
+      "portfolio/*": [
+        "dist/portfolio/*"
+      ],
+      "kawai-engine": [
+        "dist/kawai-engine"
+      ],
+      "kawai-engine/*": [
+        "dist/kawai-engine/*"
+      ],
+      "ngxs-pizza": [
+        "dist/ngxs-pizza"
+      ],
+      "ngxs-pizza/*": [
+        "dist/ngxs-pizza/*"
+      ],
+      "ngrx-pizza": [
+        "dist/ngrx-pizza"
+      ],
+      "ngrx-pizza/*": [
+        "dist/ngrx-pizza/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "enableIvy": true
+  }
+}

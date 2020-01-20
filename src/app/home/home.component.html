@@ -1,0 +1,41 @@
+<h1>Bienvenue dans la NgBox une expérience de developpement inédit sur Angular </h1>
+<!--<p>
+  la NgBox est une application qui regroupe de multitudes d'application gérer au sein de la box
+
+  Une application la box
+
+  des applications librairies
+
+  une infinité de possibilité et on ne bosse plus que la dessus ;)
+
+  on y ajoute toutes les applications , on fait de l'intégration d'application/ tuto existant
+  on y rajoute de la pédagogie direct dans l'appli
+  on vérifie le code
+  on y donne le code source
+  on y donne un example stacblitz et de la doc
+  on publie
+
+  comment rémunérer .
+
+  abonnement à l'accès box par stripe 10€ par mois.
+  Réduction avec les livres Angular.
+  Accès à des ressources interne.
+  Forfait pour mabox.
+  Demande Spécifique d'ajout de fonctionnalité à la box.
+  Box market pour y ajouter des exemples .
+
+  Le choix de la box
+</p>-->
+
+<h2>Ajoute ton app mon lapin !</h2>
+<coderbase-tableau></coderbase-tableau>
+<div id="card-container">
+  <app-appli-card *ngFor="let app of applis"
+                  [modulePath]="app.modulePath"
+                  [path]="app.path"
+                  [url]="app.url"
+                  [title]="app.title"
+                  [description]="app.description"
+                  [subtitle]="app.subtitle"
+                  [image]="app.image"></app-appli-card>
+</div>
