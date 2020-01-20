@@ -1,4 +1,2 @@
-#card-container {
-  display: flex;
-  flex-flow: row wrap;
-}
+
+app-appli-card { display:inline-block; max-width:300px; min-width:100px; margin:10px 10px 10px 10px; }

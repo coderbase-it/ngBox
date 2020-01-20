@@ -19,7 +19,7 @@ import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AppliCardComponent } from './appli-card/appli-card.component';
-import {MatCardModule, MatSlideToggleModule} from '@angular/material';
+import {MatCardModule, MatFormFieldModule, MatSelectModule, MatSlideToggleModule, MatTabsModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import {MatCardModule, MatSlideToggleModule} from '@angular/material';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgxsModule.forRoot([], { developmentMode: !environment.production }),
+    NgxsModule.forRoot([], {developmentMode: !environment.production}),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsLoggerPluginModule.forRoot(),
     LayoutModule,
@@ -44,10 +44,12 @@ import {MatCardModule, MatSlideToggleModule} from '@angular/material';
     MatListModule,
     ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
     MatCardModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatTabsModule,
+    MatSelectModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [NO_ERRORS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

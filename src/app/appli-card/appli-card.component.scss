@@ -5,3 +5,9 @@ mat-card {
   max-width: 150px;
   margin: 4px;
 }
+mat-card img{
+
+    height: 150px; /* adjust as needed */
+    object-fit: contain;
+
+}

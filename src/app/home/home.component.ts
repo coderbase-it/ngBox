@@ -6,8 +6,6 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  module = 'PokerLoaderModule';
-
   applis = [
     {
       path: 'poker',
@@ -38,7 +36,7 @@ export class HomeComponent implements OnInit {
     {
       path: 'black-jack',
       url: '/black-jack/bj2',
-      title: ' 🃏🃏   BlackJack 2 🃏🃏 ',
+      title: ' 🃏 BlackJack 2 🃏 ',
       description: 'BlackJack 2',
       subtitle: 'BlackJack forever',
       // tslint:disable-next-line:max-line-length
@@ -47,7 +45,7 @@ export class HomeComponent implements OnInit {
     },
     {
       path: 'black-jack',
-      title: ' 🃏🃏   BlackJack  🃏🃏 ',
+      title: ' 🃏 BlackJack  🃏 ',
       description: 'BlackJack ',
       subtitle: 'BlackJack forever',
       // tslint:disable-next-line:max-line-length
@@ -62,9 +60,5 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  get modulePath() {
-    // @ts-ignore module="PokerLoaderModule"
-    return;
-  }
 
 }
