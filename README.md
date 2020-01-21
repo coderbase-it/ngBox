@@ -27,3 +27,10 @@ version difficile
 https://github.com/adamczyk777/tick_game_theory_toe
 
 https://jfeigel.github.io/yahtzee/game
+
+
+## TODO a faire pour formation nice
+I18N 
+E2E 
+detection changes 
+interface pour applications 
