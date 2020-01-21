@@ -1,8 +1,4 @@
-
-
-
-
-<mat-tab-group>
+<mat-tab-group mat-align-tabs="center" animationDuration="1500ms">
   <mat-tab label="Game">
   <app-appli-card *ngFor="let app of games"
 
@@ -13,7 +9,15 @@
                   [image]="app.image"></app-appli-card>
 </mat-tab>
   <mat-tab label="Divers">
-    <app-appli-card *ngFor="let app of divers"
+  <app-appli-card *ngFor="let app of divers"
+                  [url]="app.url"
+                  [title]="app.title"
+                  [description]="app.description"
+                  [subtitle]="app.subtitle"
+                  [image]="app.image"></app-appli-card>
+</mat-tab>
+  <mat-tab label="Redux">
+    <app-appli-card *ngFor="let app of redux"
                     [url]="app.url"
                     [title]="app.title"
                     [description]="app.description"

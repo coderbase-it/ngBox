@@ -1,14 +1,12 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {HomeComponent} from './home/home.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
- {path: 'poker', loadChildren: () => import('./loaders/poker-loader/poker-loader.module').then((m) => m.PokerLoaderModule)},
- {path: 'snakegame', loadChildren: () => import('./loaders/snakegame-loader/snakegame-loader.module').then((m) => m.SnakegameLoaderModule)},
- {path: 'unicornland', loadChildren: () => import('./loaders/unicornland-loader/unicornland-loader.module').then((m) => m.UnicornlandLoaderModule)},
+
+  {path: 'poker', loadChildren: () => import('./loaders/poker-loader/poker-loader.module').then((m) => m.PokerLoaderModule)},
+  {path: 'snakegame', loadChildren: () => import('./loaders/snakegame-loader/snakegame-loader.module').then((m) => m.SnakegameLoaderModule)},
+  {path: 'unicornland', loadChildren: () => import('./loaders/unicornland-loader/unicornland-loader.module').then((m) => m.UnicornlandLoaderModule)},
   {path: 'movie', loadChildren: () => import('./loaders/movie-loader/movie-loader.module').then((m) => m.MovieLoaderModule)},
   {path: 'crm', loadChildren: () => import('./loaders/crm-loader/crm-loader.module').then((m) => m.CrmLoaderModule)},
   {path: 'element', loadChildren: () => import('./loaders/element-loader/element-loader.module').then((m) => m.ElementLoaderModule)},
@@ -22,8 +20,35 @@ const routes: Routes = [
     path: 'kawai',
     loadChildren: () => import('./loaders/kawai-loader/kawai-loader.module').then((m) => m.KawaiLoaderModule)
   },
+  {
+    path: 'crm',
+    loadChildren: () => import('./loaders/crm-loader/crm-loader.module').then((m) => m.CrmLoaderModule)
+  },
+  {
+    path: 'element',
+    loadChildren: () => import('./loaders/element-loader/element-loader.module').then((m) => m.ElementLoaderModule)
+  },
+  {
+    path: 'todo-ngxs',
+    loadChildren: () => import('./loaders/todo-ngxs-loader/todo-ngxs-loader.module').then((m) => m.TodoNgxsLoaderModule)
+  },
+  {
+    path: 'ngrx-pizza',
+    loadChildren: () => import('./loaders/ngrx-pizza-loader/ngrx-pizza-loader.module').then((m) => m.NgrxPizzaLoaderModule)
+  },
+  {
+    path: 'ngxs-pizza',
+    loadChildren: () => import('./loaders/ngxs-pizza-loader/ngxs-pizza-loader.module').then((m) => m.NgxsPizzaLoaderModule)
+  },
+  {
+    path: 'todo-ngxs',
+    loadChildren: () => import('./loaders/todo-ngxs-loader/todo-ngxs-loader.module').then((m) => m.TodoNgxsLoaderModule)
+  },
 
-
+  {
+    path: 'movie',
+    loadChildren: () => import('./loaders/movie-loader/movie-loader.module').then((m) => m.MovieLoaderModule)
+  },
 ];
 
 @NgModule({

@@ -1,7 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {LoadChildrenCallback, Router} from '@angular/router';
-import {MenuService} from '../my-nav/menu.service';
-import {stringify} from 'querystring';
+
 
 @Component({
   selector: 'app-appli-card',
